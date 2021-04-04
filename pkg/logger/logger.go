@@ -12,7 +12,7 @@ import (
 
 var timeFormat = "02/Jan/2006:15:04:05 -0700"
 
-// Logger is the logrus logger handler
+// Logger is the logrus logger handler implemented as a gin gonic handler function.
 func Logger(logger log.FieldLogger) gin.HandlerFunc {
 	hostname, err := os.Hostname()
 	if err != nil {
